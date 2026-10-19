@@ -41,6 +41,13 @@ O script atualiza a lista de pacotes, instala o Apache, habilita o serviço e pu
 
 O script foi executado com sucesso em uma VM que já possuía o Apache instalado. A validação em um Ubuntu limpo ainda está pendente.
 
+## Resultado visual
+
+A captura abaixo mostra o portfólio publicado
+no servidor web Apache, executado no Ubuntu Server.
+
+![Portfólio no Apache](imagens/captura-apache.png)
+
 ## Autora
 
 Raphaely Magalhães
