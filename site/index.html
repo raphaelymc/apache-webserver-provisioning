@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio técnico de Raphaely Magalhães — infraestrutura de TI, redes, Linux e computação em nuvem AWS.">
+  <title>Raphaely Magalhães | Cloud, Infraestrutura e Redes</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0a1020; --panel:#111b30; --text:#edf4ff; --muted:#b5c4d9; --accent:#77d7d0; --line:#2c3e58; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    a { color:var(--accent); }
+    a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+    .wrap { max-width:1050px; margin:auto; padding:0 24px; }
+    header { border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; gap:16px; align-items:center; min-height:72px; flex-wrap:wrap; }
+    .brand { font-size:1.1rem; font-weight:800; color:var(--text); text-decoration:none; }
+    .navlinks { display:flex; gap:18px; flex-wrap:wrap; }
+    .navlinks a { color:var(--muted); text-decoration:none; font-size:.94rem; }
+    .navlinks a:hover { color:var(--accent); }
+    .hero { padding:86px 0 70px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.13em; font-size:.8rem; font-weight:800; }
+    h1 { font-size:clamp(2.2rem,6vw,4rem); line-height:1.1; max-width:800px; margin:15px 0 20px; }
+    h2 { font-size:clamp(1.5rem,3vw,2rem); margin:0 0 20px; }
+    h3 { margin:0 0 10px; font-size:1.12rem; }
+    .intro { max-width:740px; color:var(--muted); font-size:1.08rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
+    .button { display:inline-block; padding:11px 17px; border-radius:9px; border:1px solid var(--accent); font-weight:700; text-decoration:none; }
+    .button.primary { background:var(--accent); color:#08202b; }
+    .button.secondary { color:var(--accent); }
+    section { padding:25px 0 45px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:23px; }
+    .tag { display:inline-block; margin:4px 6px 4px 0; padding:4px 9px; border-radius:999px; background:#20354b; color:#c9edee; font-size:.78rem; }
+    p, li { color:var(--muted); }
+    .card p { margin-top:0; }
+    .card a { font-weight:650; text-decoration-thickness:1px; text-underline-offset:3px; }
+    .note { border-left:3px solid var(--accent); padding-left:18px; color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding:28px 0 45px; color:var(--muted); font-size:.9rem; }
+    @media(max-width:620px) { .hero{padding:54px 0 43px;} nav{padding:16px 0;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav aria-label="Menu principal">
+        <a class="brand" href="#inicio">RM / Portfólio TI</a>
+        <div class="navlinks"><a href="#projetos">Projetos</a><a href="#competencias">Competências</a><a href="#formacao">Formação</a><a href="#contato">Contato</a></div>
+      </nav>
+    </div>
+  </header>
+  <main id="inicio" class="wrap">
+    <div class="hero">
+      <div class="eyebrow">Cloud Computing · Infraestrutura · Redes</div>
+      <h1>Olá! Eu sou Raphaely Magalhães.</h1>
+      <p class="intro">Estudante do 6º período de Engenharia de Software, com foco em infraestrutura, redes e computação em nuvem. Desenvolvo projetos práticos com AWS, Linux e servidores web e busco uma oportunidade de entrada na área de TI em uma posição júnior.</p>
+      <div class="actions">
+        <a class="button primary" href="#projetos">Conheça meus projetos</a>
+        <a class="button secondary" href="https://github.com/raphaelymc" target="_blank" rel="noopener noreferrer">Meu GitHub ↗</a>
+      </div>
+    </div>
+
+    <section id="projetos" aria-labelledby="tit-projetos">
+      <h2 id="tit-projetos">Projetos e laboratórios</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Portfólio na AWS — S3 + CloudFront</h3>
+          <p>Hospedagem estática em bucket S3 privado, distribuição com CloudFront, OAC e acesso por HTTPS com domínio personalizado.</p>
+          <div><span class="tag">AWS S3</span><span class="tag">CloudFront</span><span class="tag">OAC</span></div>
+          <p><a href="https://github.com/raphaelymc/aws-cloud-portfolio" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>Servidor Web na AWS — EC2 + Nginx</h3>
+          <p>Laboratório de provisionamento Linux na EC2, acesso remoto por SSH, configuração de Security Groups e publicação de página web com Nginx.</p>
+          <div><span class="tag">EC2</span><span class="tag">Linux</span><span class="tag">SSH</span><span class="tag">Nginx</span></div>
+        </article>
+        <article class="card">
+          <h3>Projeto de extensão — Violência contra a Mulher</h3>
+          <p>Projeto acadêmico com dados públicos do ISP-RJ apresentados de forma acessível para conscientização social.</p>
+          <div><span class="tag">Dados públicos</span><span class="tag">AWS</span><span class="tag">Projeto social</span></div>
+          <p><a href="https://projeto-mulher.raphaely.dev" target="_blank" rel="noopener noreferrer">Conhecer projeto ↗</a></p>
+        </article>
+        <article class="card">
+          <h3>Laboratórios de redes com Packet Tracer</h3>
+          <p>Simulações de DHCP, DNS, IPv4/IPv6, VLANs, roteamento e testes de conectividade entre dispositivos.</p>
+          <div><span class="tag">Redes</span><span class="tag">Cisco Packet Tracer</span><span class="tag">Troubleshooting</span></div>
+        </article>
+        <article class="card">
+          <h3>Administração Linux e automação Bash</h3>
+          <p>Práticas com usuários, grupos, permissões, diretórios e scripts para automatizar rotinas de configuração no Linux.</p>
+          <div><span class="tag">Linux</span><span class="tag">Bash</span><span class="tag">GitHub</span></div>
+        </article>
+        <article class="card">
+          <h3>Provisionamento de servidor web — Apache</h3>
+          <p>Laboratório de Infraestrutura como Código: instalação do Apache, habilitação do serviço e publicação automatizada deste site por script Bash.</p>
+          <div><span class="tag">Ubuntu Server</span><span class="tag">Apache</span><span class="tag">IaC</span></div>
+          <p class="note">Projeto em desenvolvimento: a automação será validada em uma máquina virtual limpa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="competencias" aria-labelledby="tit-competencias">
+      <h2 id="tit-competencias">Competências técnicas</h2>
+      <div class="grid">
+        <div class="card"><h3>Cloud</h3><p>AWS: EC2, S3, CloudFront, IAM, ACM e OAC.</p></div>
+        <div class="card"><h3>Infraestrutura e redes</h3><p>Linux, SSH, TCP/IP, DNS, DHCP, VLANs, roteamento básico e diagnóstico de conectividade.</p></div>
+        <div class="card"><h3>Ferramentas e programação</h3><p>Git, GitHub, Bash, Docker (em estudo), Python e Java (fundamentos).</p></div>
+      </div>
+    </section>
+
+    <section id="formacao" aria-labelledby="tit-formacao">
+      <h2 id="tit-formacao">Formação e cursos</h2>
+      <div class="grid">
+        <div class="card"><h3>Engenharia de Software — UNOPAR</h3><p>6º período · Conclusão prevista: junho de 2027.</p></div>
+        <div class="card"><h3>Cisco Networking Academy</h3><p>Networking Basics — concluído.<br>Network Defense — concluído.</p></div>
+        <div class="card"><h3>DIO — Bootcamp DevOps com AWS</h3><p>Linux, Docker, Docker Compose, Swarm, Kubernetes e AWS. Conclusão prevista: 24 de outubro de 2026.</p></div>
+        <div class="card"><h3>AWS Certified Cloud Practitioner</h3><p>Preparação para a certificação em andamento.</p></div>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="tit-contato">
+      <h2 id="tit-contato">Contato</h2>
+      <p>Rio de Janeiro, Brasil · Interesse em oportunidades júnior de Suporte, Infraestrutura, Redes e Cloud.</p>
+      <p><a href="https://www.linkedin.com/in/raphaely-magalhaes" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> · <a href="https://github.com/raphaelymc" target="_blank" rel="noopener noreferrer">GitHub ↗</a></p>
+    </section>
+  </main>
+  <footer><div class="wrap">Portfólio de Raphaely Magalhães · Site estático em HTML e CSS · Projeto de laboratório Apache/Linux.</div></footer>
+</body>
+</html>
