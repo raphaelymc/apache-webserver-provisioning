@@ -37,9 +37,6 @@ O script atualiza a lista de pacotes, instala o Apache, habilita o serviço e pu
 - Requisição HTTP com curl.
 - Visualização do portfólio no Safari por túnel SSH.
 
-## Observação
-
-O script foi executado com sucesso em uma VM que já possuía o Apache instalado. A validação em um Ubuntu limpo ainda está pendente.
 
 ## Resultado visual
 
